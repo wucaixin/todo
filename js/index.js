@@ -8,6 +8,7 @@
     	mouseWheel: true,
     	scrollbars: true,
     	shrinkScrollbars:"scale",
+        click:true
     });
     var state="project";
     //点击增加
@@ -24,10 +25,10 @@
     	});	
     });
     $(".submit").click(function(){
-    	let val=$("#text").val();
+    	var val=$("#text").val();
     	$("#text").val("");
-    	let Data=getData();
-    	let time=new Date().getTime();
+    	var Data=getData();
+    	var time=new Date().getTime();
     	Data.push({content:val,time,star:false,done:false});
     	saveData(Data);
     	render();
