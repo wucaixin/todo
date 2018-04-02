@@ -17,6 +17,10 @@
 .swiper-slide{
 	background: #f2f2f2;
 }
+.swiper-slide img{
+	width: 100vw;
+    height: 30vh;
+}
 .swiper-container {
     width: 100vw;
     height: 30vh;
